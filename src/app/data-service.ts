@@ -6,7 +6,7 @@ import { Persona } from "./persona.model";
 export class DataService {
     constructor(private httpClient : HttpClient) {}
 
-    urlBase = 'http://localhost:8080/personas-backend/java/webservice/personas';
+    urlBase = 'http://localhost:8080/personas-backend-java/webservices/personas';
 
     cargarPersonas(){
         return this.httpClient.get(this.urlBase);
